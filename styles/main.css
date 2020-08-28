@@ -1,0 +1,9 @@
+.option_or {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Source Sans Pro Light";
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(190, 191, 186);
+}
