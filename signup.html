@@ -57,8 +57,8 @@
             <div class="input-group-prepend">
                 <span class="input-group-text">First and last name</span>
             </div>
-            <input type="text" placeholder="First" aria-label="First name" class="form-control">
-            <input type="text" aria-label="Last name" placeholder="Last" class="form-control">
+            <input type="text" placeholder="First" aria-label="First name" class="form-control" id="fName">
+            <input type="text" aria-label="Last name" placeholder="Last" class="form-control" id="lName">
         </div>
         <p></p>
         <div class="input-group">
@@ -66,12 +66,12 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">Email</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Onyen" aria-label="Username" aria-describedby="addon-wrapping">
+                <input type="text" class="form-control" placeholder="Onyen" aria-label="Username" aria-describedby="addon-wrapping" id="onyen">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="addon-wrapping">@</span>
                 </div>
                 <div class="input-group-append">
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select class="custom-select" id="inputGroupSelect">
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">
                                 <option value="1">admissions.unc.edu</option>
@@ -202,20 +202,20 @@
 
             <div class="input-group-prepend">
 
-                <span class="input-group-text">Password</span>
+                <span class="input-group-text" id="password">Password</span>
             </div>
             <input type="text" aria-label="Password" placeholder="Password" class="form-control">
         </div>
         <p></p>
         <div class="input-group">
             <div class="input-group-prepend">
-                <span class="input-group-text">Confirm Password</span>
+                <span class="input-group-text" id="cPassword">Confirm Password</span>
             </div>
             <input type="text" aria-label="Confirm Password" placeholder="Confirm Password" class="form-control">
         </div>
         <p></p>
         <br>
-        <div><button type="button" class="btn btn-success btn-lg btn-block">Signup</button></div>
+        <div><button type="button" class="btn btn-success btn-lg btn-block" id="signup">Signup</button></div>
 
         <br>
         <br>
@@ -246,7 +246,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+    <script src="sources/Something.js"></script>
 
 </body>
 
