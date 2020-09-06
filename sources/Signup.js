@@ -1,31 +1,28 @@
 var fName = document.getElementById("fName")
 var lName = document.getElementById("lName")
-var onyen = document.getElementById("onyen")
-let address = document.getElementById("inputGroupSelect").innerHTML
+let onyen = document.getElementById("onyen")
+let domain = document.getElementById("inputGroupSelect")
 var password = document.getElementById("password")
 var cPassword = document.getElementById("cPassword")
 var signup = document.getElementById("signup")
 
 var email;
 
-function getAddress() {
-    address = address.value
+function getDomain() {
+    domain = $("#inputGroupSelect option:selected").val();
+    return domain
 }
 
 function getOnyen() {
-    onyen = onyen.value
+    onyen = $("#onyen").val()
+    return onyen
 }
 
 function createEmail() {
-    console.log(getAddress());
+    console.log(getDomain());
     console.log(getOnyen());
 
-    email = onyen + "@" + address
+    email = onyen + "@" + domain
 
     console.log(email)
 }
-
-
-
-
-$(document).ready(signup.addEventListener("click", createEmail()));
