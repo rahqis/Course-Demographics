@@ -1,34 +1,31 @@
-document
-this.document
+var fName = document.getElementById("fName")
+var lName = document.getElementById("lName")
+var onyen = document.getElementById("onyen")
+let address = document.getElementById("inputGroupSelect").innerHTML
+var password = document.getElementById("password")
+var cPassword = document.getElementById("cPassword")
+var signup = document.getElementById("signup")
 
-let emails = []
-let profile = []
-let accounts = []
+var email;
 
-const addEmail = (ev) => {
-    var emailExists = false
-    ev.preventDefault();
-    let email = {
-        onyen: document.getElementById("onyen").value,
-        inputGroupSelect: document.getElementById("inputGroupSelect").innerHTML
-    }
-    email = onyen + "@" + inputGroupSelect
-    for (var i = 0; i < emails.length; i++) {
-        if (email === emails[i])
-            emailExists = true
-    }
-    if (!emailExists) {
-        emails.push(email)
-    } else {
-        alert("Email already exists, please use a different email address.")
-    }
-
-    document.querySelector('form').reset()
+function getAddress() {
+    address = address.value
 }
 
-const addAccount = (ev) => {
-
+function getOnyen() {
+    onyen = onyen.value
 }
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("signup").addEventListener("click", addEmail);
-});
+
+function createEmail() {
+    console.log(getAddress());
+    console.log(getOnyen());
+
+    email = onyen + "@" + address
+
+    console.log(email)
+}
+
+
+
+
+$(document).ready(signup.addEventListener("click", createEmail()));
